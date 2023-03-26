@@ -20,3 +20,5 @@ Group By Country, Date
 ```
 
 However, this would work only if your data has every dates in a certain year. So if you apply this syntax on the table above, lets say to produce rolling sum of the last 3 days, it will sum volume of every 3 rows instead.
+
+In short, this query will help you to rolling sum for the last 30 (changes as you want) days, not 30 rows.
