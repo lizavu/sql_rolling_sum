@@ -10,7 +10,7 @@ This query is in use when you want to calculate a rolling sum but your table doe
 
 Normally, when you need to do a rolling sum, page1 Google or now ChatGPT will give you more or less this answer:
 
-Select [Region]
+Select [Region] <br>
 , [Order Date]
 , Sum([Sales]) as ‘Sales’
 , Avg(Sum(Sales)) Over (Partition by [Region] Order By [Order Date] Rows Between 29 Preceding and Current row) as ’30 Day Moving Avg.’
